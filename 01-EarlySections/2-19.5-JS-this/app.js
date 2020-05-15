@@ -18,7 +18,7 @@ class NameGenerator {
         //     this.addName(); // doesn't work
         // });
         btn.addEventListener('click', () => {
-            this.addName(); // doesn't work
+            this.addName(); // works
         });
     }
 
