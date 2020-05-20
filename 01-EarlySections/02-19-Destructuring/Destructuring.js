@@ -6,10 +6,24 @@ const person = {
     }
 };
 
+const printName_1 = (personData) => {
+    console.log(personData.name);
+};
 
+printName_1(person);
 
+const printName_2 = ({ name }) => {
+    console.log(name);
+};
 
-// const hobbies = ['Sports', 'Cooking'];
+printName_2(person);
+
+const { name, age } = person;
+console.log(name, age);
+
+const hobbies = ['Sports', 'Cooking'];
+const [hobby1, hobby2] = hobbies;
+console.log(hobby2, hobby1);
 // // for (let hobby of hobbies) {
 // //     console.log(hobby);
 // // }
