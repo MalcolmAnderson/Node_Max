@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
     if (url === '/message' && method === 'POST') {
         console.log('Message 05');
         const body = [];
-        req.on('data', (chunk) => {
+        req.on('data', (chunk) => { 
             console.log('Message 06');
             console.log(chunk);
             body.push(chunk);
