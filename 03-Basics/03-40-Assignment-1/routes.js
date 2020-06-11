@@ -37,7 +37,7 @@ const requestHandler = (req, res) => {
             const parsedBody = Buffer.concat(body).toString();
             console.log(parsedBody.split("=")[1]);
         });
-        res.statusCode = 302;
+        res.statusCode = 302; 
         res.setHeader('Location', '/');
         res.end();
     }
