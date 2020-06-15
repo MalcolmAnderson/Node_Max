@@ -7,9 +7,9 @@ app.use('/', (req, res, next)=>{
     next(); 
 });
 
-app.use('/users', (req, res, next) => {
-    console.log("In the users middleware!");
-    res.send('<h1>The "Users" page</h1>');
+app.use('/add-product', (req, res, next) => {
+    console.log("In the product middleware!");
+    res.send('<h1>The "Add Product" page</h1>');
 });
 
 app.use('/', (req, res, next) => {
